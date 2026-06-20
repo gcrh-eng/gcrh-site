@@ -13,6 +13,7 @@
   --slate-200: #e2e8f0;
   --slate-100: #f1f5f9;
   --slate-50: #f8fafc;
+  --orange-50:  #FFA500;
   --white: #ffffff;
   --shadow-soft: 0 18px 45px rgba(15, 35, 58, 0.12);
   --shadow-card: 0 12px 28px rgba(15, 35, 58, 0.09);
@@ -228,6 +229,251 @@ img { max-width: 100%; display: block; }
 .card-link { color: var(--blue-800); font-weight: 800; display:inline-flex; align-items:center; gap:6px; }
 .card-link::after { content:"→"; transition: transform .18s ease; }
 .card-link:hover::after { transform: translateX(3px); }
+
+/* Galeria simples de serviços realizados */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  box-shadow: var(--shadow-card);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform .25s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.035);
+}
+
+.photo-caption {
+  padding: 14px 18px;
+  background: var(--white);
+  color: var(--slate-700);
+  font-size: .95rem;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.photo-caption strong {
+  color: var(--blue-900);
+}
+
+/* Variante mais alta */
+.photo-grid.photo-grid-tall .photo-item img {
+  height: 420px;
+}
+
+/* Variante com três colunas */
+.photo-grid.photo-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photo-grid.photo-grid-3 .photo-item img {
+  height: 260px;
+}
+
+/* Botão invisível para imagem clicável */
+.photo-open {
+  width: 100%;
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.photo-open img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform .25s ease;
+}
+
+.photo-open:hover img {
+  transform: scale(1.035);
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background: rgba(6, 36, 61, .88);
+  backdrop-filter: blur(8px);
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox-dialog {
+  width: min(1100px, 100%);
+  max-height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: calc(100vh - 150px);
+  object-fit: contain;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  background: var(--white);
+}
+
+.lightbox-caption {
+  width: min(900px, 100%);
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, .88);
+  text-align: center;
+  font-size: .95rem;
+  line-height: 1.45;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 22px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, .28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .12);
+  color: var(--white);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, .22);
+}
+
+@media (max-width: 620px) {
+  .lightbox {
+    padding: 18px;
+  }
+
+  .lightbox-image {
+    max-height: calc(100vh - 140px);
+  }
+
+  .lightbox-close {
+    top: 14px;
+    right: 14px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .photo-grid.photo-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .photo-grid,
+  .photo-grid.photo-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-item img,
+  .photo-grid.photo-grid-3 .photo-item img {
+    height: 260px;
+  }
+
+  .photo-grid.photo-grid-tall .photo-item img {
+    height: 320px;
+  }
+}
+
+
+/* Lista compacta de serviços em formato de botões */
+.service-button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.service-button {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-left: 4px solid var(--blue-800);
+  border-radius: var(--radius-md);
+  color: var(--blue-900);
+  font-weight: 800;
+  line-height: 1.25;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+}
+
+.service-button:hover {
+  transform: translateY(-3px);
+  background: var(--blue-900);
+  color: var(--white);
+  border-color: var(--blue-900);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Versão ainda mais compacta */
+.service-button-grid.compact {
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.service-button-grid.compact .service-button {
+  min-height: 48px;
+  padding: 9px 14px;
+  font-size: .92rem;
+  border-radius: 10px;
+}
+
+/* Variante com mais colunas */
+.service-button-grid.four-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1020px) {
+  .service-button-grid,
+  .service-button-grid.four-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 620px) {
+  .service-button-grid,
+  .service-button-grid.four-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
 .kicker { color: var(--blue-800); font-weight: 800; letter-spacing: .1em; text-transform: uppercase; font-size: .76rem; }
 
 .feature-band { border-radius: var(--radius-xl); padding: 34px; background: linear-gradient(135deg, var(--blue-950), var(--blue-800)); color:white; display:grid; grid-template-columns: 1.2fr .8fr; gap:28px; align-items:center; box-shadow: var(--shadow-soft); }
@@ -265,6 +511,15 @@ img { max-width: 100%; display: block; }
   object-fit: cover;
 }
 
+/* Imagem única alta dentro de blocos split */
+.split .split-media.split-media-tall-single img {
+  height: 840px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+}
+
 /* Variante: imagem à esquerda e texto à direita */
 .split-left .split-media {
   order: 1;
@@ -283,10 +538,27 @@ img { max-width: 100%; display: block; }
   order: 2;
 }
 
-.split img { border-radius: var(--radius-xl); box-shadow: var(--shadow-soft); height: 420px; width:100%; object-fit: cover; }
+/* Uma única imagem com aproximadamente o dobro da altura padrão */
+.split .split-media-tall-single img {
+  height: 840px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+}
+
 .check-list { display:grid; gap:12px; margin-top:22px; }
 .check-item { display:flex; gap:10px; align-items:flex-start; color: var(--slate-700); }
 .check-item::before { content:"✓"; flex:0 0 24px; width:24px; height:24px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; background: rgba(34,197,94,.12); color: var(--green-500); font-weight:900; }
+
+.check-list-light .check-item {
+  color: rgba(255, 255, 255, .86);
+}
+
+.check-list-light .check-item::before {
+  background: rgba(125, 211, 252, .18);
+  color: var(--cyan-300);
+}
 
 .page-hero { background: linear-gradient(135deg, var(--blue-950), var(--blue-800)); color:white; padding: 74px 0; }
 .page-hero .page-title h1 { color:white; }
@@ -401,6 +673,10 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
 }
+
+.split .split-media-tall-single img {
+  height: 520px;
+}
   .feature-actions { justify-content:flex-start; }
   .split img { height:280px; }
 }
@@ -474,6 +750,18 @@ img { max-width: 100%; display: block; }
   margin-bottom: 10px;
 }
 
+.resource-item-content .badge-form {
+  width: fit-content;
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 5px 9px;
+  background: var(--orange-50);
+  color: var(--blue-900);
+  font-size: .76rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
 .resource-item-content h3 {
   margin: 0 0 8px;
   color: var(--blue-900);
@@ -499,6 +787,10 @@ img { max-width: 100%; display: block; }
 
 .resource-list.compact .resource-item-image {
   height: 135px;
+}
+
+.split .split-media-tall-single img {
+  height: 420px;
 }
 
 @media (max-width: 760px) {
