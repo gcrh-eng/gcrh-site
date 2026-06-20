@@ -3,147 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>GCRH Engenharia | Recursos Hídricos, Estudos Ambientais e Modelagem Computacional</title>
-
-  <meta name="description" content="GCRH Engenharia: estudos hidrológicos, drenagem urbana, modelagem computacional, geoprocessamento, estudos ambientais, PGRCC e consultoria técnica em engenharia." />
-
+  <title>GCRH Engenharia | Estudos técnicos, projetos e soluções digitais</title>
+  <meta name="description" content="GCRH Engenharia: recursos hídricos, saneamento, drenagem urbana, estudos ambientais, geoprocessamento, modelagem computacional, treinamentos e soluções digitais." />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
-   <script src="assets/js/main.js"></script>
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="container header-content">
-      <div class="brand">
-        <h1>GCRH Engenharia</h1>
-        <span>Engenharia, recursos hídricos e modelagem computacional</span>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="GCRH Engenharia - página inicial">
+      <img class="brand-logo" src="assets/img/logos/logo.png" alt="GCRH Engenharia" />
+      <span class="brand-name">
+        <strong>GCRH Engenharia</strong>
+        <span>Recursos hídricos, saneamento e modelagem</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menu">Menu</button>
+    <!--
+      MENU PRINCIPAL PADRÃO — GCRH
+      Para replicar em outras páginas, substitua o bloco entre "MENU PRINCIPAL - INÍCIO" e "MENU PRINCIPAL - FIM".
+      Ajuste apenas os caminhos relativos conforme a profundidade da página:
+      raiz: pages/... | pages/: ../pages/... | pages/subpasta/: ../../pages/...
+      O item "Projetos" fica dentro do dropdown de Serviços.
+    -->
+    <!-- MENU PRINCIPAL - INÍCIO -->
+    <nav class="main-nav" data-main-nav aria-label="Navegação principal">
+      <a href="index.html" class="active">Início</a>
+
+      <div class="nav-item has-dropdown">
+        <a
+          href="pages/servicos.html"
+          class="nav-link "
+          data-dropdown-trigger
+          aria-haspopup="true"
+          aria-expanded="false"
+        >Serviços</a>
+        <div class="dropdown-menu" aria-label="Submenu de serviços">
+          <a href="pages/servicos.html#estudos">Estudos</a>
+          <a href="pages/servicos.html#consultoria-assessoria">Consultoria e Assessoria</a>
+          <a href="pages/servicos.html#projetos">Projetos</a>
+        </div>
       </div>
 
-      <nav class="main-nav">
-        <a href="index.html">Início</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="solucoes-digitais.html">Soluções Digitais</a>
-        <a href="orcamento.html">Solicitar Orçamento</a>
-        <a href="contato.html">Contato</a>
-      </nav>
+      <a href="pages/solucoes-digitais.html" class="">Soluções Digitais</a>
+      <a href="pages/biblioteca-tecnica.html" class="">Biblioteca Técnica</a>
+      <a href="pages/treinamentos.html" class="">Treinamentos</a>
+      <a href="pages/contato.html" class="">Contato</a>
+      <a class="nav-cta" href="pages/orcamento.html">Solicitar orçamento</a>
+    </nav>
+    <!-- MENU PRINCIPAL - FIM -->
+
+    <div class="lang-switch" aria-label="Selecionar idioma"><a class="active" href="index.html">PT</a><a href="en/index.html">EN</a></div>
+  </div>
+</header>
+<main id="conteudo">
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="eyebrow">Engenharia consultiva</span>
+      <h1>Estudos técnicos, projetos e soluções para engenharia e meio ambiente.</h1>
+      <p>Apoio técnico em licenciamento ambiental, outorga de direito de uso de recursos hídricos, saneamento, drenagem urbana, estudos ambientais, geoprocessamento, modelagem computacional, projetos e documentação para tomada de decisão.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="pages/orcamento.html">Solicitar orçamento</a>
+        <a class="btn btn-secondary" href="pages/servicos.html">Conhecer serviços</a>
+      </div>
     </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="tagline">Consultoria técnica em engenharia</p>
-
-          <h2>Estudos técnicos, modelagem computacional e soluções digitais para engenharia e meio ambiente.</h2>
-
-          <p class="hero-text">
-            A GCRH Engenharia atua na elaboração de estudos hidrológicos, modelagem hidráulica,
-            modelagem de autodepuração, drenagem urbana, geoprocessamento, estudos ambientais,
-            PGRCC, pareceres técnicos e desenvolvimento de soluções digitais aplicadas à engenharia.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="orcamento.html">Solicitar orçamento</a>
-            <a class="btn btn-secondary" href="servicos.html">Conhecer serviços</a>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <h3>Áreas de atuação</h3>
-          <ul>
-            <li>Recursos hídricos</li>
-            <li>Drenagem urbana</li>
-            <li>Estudos ambientais</li>
-            <li>Geoprocessamento</li>
-            <li>Modelagem computacional</li>
-            <li>Gestão de resíduos</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <h2>Serviços técnicos</h2>
-
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Estudos hidrológicos</h3>
-            <p>
-              Caracterização de bacias, estimativa de vazões, regionalização hidrológica,
-              avaliação de disponibilidade hídrica e suporte técnico para projetos de engenharia.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Drenagem urbana</h3>
-            <p>
-              Análise de sistemas de micro e macrodrenagem, estudos de contribuição,
-              diagnóstico de pontos críticos e apoio a projetos de infraestrutura urbana.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Modelagem ambiental</h3>
-            <p>
-              Modelagem de autodepuração de corpos hídricos, avaliação de lançamentos,
-              estudos de capacidade de suporte e pareceres técnicos ambientais.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Geoprocessamento</h3>
-            <p>
-              Processamento de dados espaciais, mapas técnicos, análise territorial,
-              bases geográficas e produtos cartográficos para estudos ambientais e engenharia.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt">
-      <div class="container split">
-        <div>
-          <h2>Soluções digitais em desenvolvimento</h2>
-          <p>
-            A GCRH Engenharia desenvolve soluções digitais para apoiar estudos técnicos,
-            organização de demandas, acompanhamento de serviços e aplicações computacionais
-            voltadas à engenharia, recursos hídricos e meio ambiente.
-          </p>
-        </div>
-
-        <div class="feature-list">
-          <p>App de disponibilidade hídrica</p>
-          <p>App de regionalização de vazões</p>
-          <p>App de modelagem de autodepuração</p>
-          <p>Portal de acompanhamento de serviços técnicos</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta">
-      <div class="container">
-        <h2>Precisa de um estudo técnico ou orçamento?</h2>
-        <p>
-          Envie as informações iniciais da sua demanda e agende uma reunião técnica para avaliação.
-        </p>
-        <a class="btn btn-primary" href="orcamento.html">Iniciar solicitação</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <p>© 2026 GCRH Engenharia. Todos os direitos reservados.</p>
-      <p>
-        <a href="politica-privacidade.html">Política de Privacidade</a>
-      </p>
+    <div class="hero-metrics">
+      <div class="metric"><strong>Hidrologia</strong><span>vazões, bacias e drenagem</span></div>
+      <div class="metric"><strong>Saneamento</strong><span>ETE, esgoto e resíduos</span></div>
+      <div class="metric"><strong>Modelagem</strong><span>simulações e cenários técnicos</span></div>
+      <div class="metric"><strong>Digital</strong><span>apps, dashboards e automações</span></div>
     </div>
-  </footer>
- 
+  </section>
+
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">Áreas principais</span>
+          <h2>Engenharia com base em dados, levantamento de campo e modelagem.</h2></div>
+
+        <p>Estruturação de estudos, projetos e pareceres com linguagem técnica, rastreabilidade metodológica e aplicação prática em empreendimentos, obras e processos ambientais.</p>
+
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card reveal"><img src="assets/img/materiais/pic01.jpg" alt="Imagem de referência para soluções digitais"><h3>Licenciamento Ambiental</h3><p>Mapas, dashboards, aplicações estáticas, ferramentas de cálculo, organização documental e futuros módulos web.</p><a class="card-link" href="pages/solucoes-digitais.html">Conhecer soluções</a></article>
+
+        <article class="card reveal"><img src="assets/img/servicos/pic01.jpg" alt="Imagem de referência para recursos hídricos"><h3>Estudos Hidrológicos</h3><p>Recursos hídricos, disponibilidade hídrica e capacidade de autodepuração, disponibilidade hídrica, drenagem urbana e avaliação de sistemas de escoamento.</p><a class="card-link" href="pages/servicos/estudos-hidrologicos.html">Ver área</a></article>
+
+        <article class="card reveal"><img src="assets/img/servicos/pic02.jpg" alt="Imagem de referência para saneamento"><h3>Saneamento e Meio Ambiente</h3><p>Projetos de saneamento, ETE, PGRCC, modelagem de autodepuração, estudos ambientais e apoio ao licenciamento.</p><a class="card-link" href="pages/servicos/saneamento.html">Ver área</a></article>
+
+        <article class="card reveal"><img src="assets/img/projetos/pic03.jpg" alt="Imagem de referência para infraestrutura"><h3>Infraestrutura e Terraplenagem</h3><p>Projetos e apoio técnico em drenagem, terraplenagem, infraestrutura urbana, implantação e documentação técnica.</p><a class="card-link" href="pages/servicos/terraplenagem.html">Ver área</a></article>
+
+    
+
+      </div>
+    </div>
+  </section>
+
+    <section class="section cta-final section-white"><div class="container"><h2>Conheça nosso portfólio de serviços técnicos</h2><a class="btn btn-dark" href="pages/servicos.html">Clique aqui!</a></div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div class="reveal">
+        <span class="kicker">Projetos e estudos</span>
+        <h2>Do diagnóstico à entrega técnica.</h2>
+        <p>A atuação da GCRH contempla estudos e projetos em saneamento, drenagem urbana, terraplenagem, estação de tratamento de esgoto, estudos ambientais e modelagens aplicadas.</p>
+        <div class="check-list">
+          <div class="check-item">Projetos de saneamento, drenagem e terraplenagem.</div>
+          <div class="check-item">Estudos hidrológicos e modelagem de autodepuração.</div>
+          <div class="check-item">Cartografia, geoprocessamento e documentação técnica.</div>
+          <div class="check-item">Relatórios, pareceres, memórias de cálculo e suporte ao licenciamento.</div>
+        </div>
+      </div>
+      <img class="reveal" src="assets/img/projetos/pic02.jpg" alt="Imagem de referência para projetos técnicos">
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="container">
+      <div class="feature-band reveal">
+        <div>
+          <span class="eyebrow">Treinamentos</span>
+          <h2>Você é consultor ambiental ou projetista? Especialize-se conosco.</h2>
+          <p>Treinamentos aplicados em recursos hídricos, estudos ambientais, geoprocessamento, modelagem computacional e elaboração de documentos técnicos.</p>
+        </div>
+        <div class="feature-actions"><a class="btn btn-primary" href="pages/treinamentos.html">Conhecer treinamentos</a><a class="btn btn-secondary" href="pages/orcamento.html">Solicitar turma fechada</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><span class="kicker">Materiais técnicos</span><h2>Cartilhas, guias e checklists para apoiar decisões.</h2></div>
+        <p>Disponibilize materiais em PDF para apresentar conceitos, requisitos e documentos necessários para contratação de estudos técnicos.</p>
+      </div>
+      <div class="card-grid card-grid-3">
+        <article class="card material-card reveal"><span class="badge">PDF</span><h3>Cartilha de PGRCC</h3><p>Introdução à gestão de resíduos da construção civil e dados necessários para orçamento.</p><a class="card-link" href="pages/materiais/cartilha-pgrcc.html">Acessar material</a></article>
+        <article class="card material-card reveal"><span class="badge">PDF</span><h3>Guia de Estudos Hidrológicos</h3><p>Conceitos básicos sobre bacias, vazões, drenagem e regionalização.</p><a class="card-link" href="pages/materiais/guia-estudos-hidrologicos.html">Acessar material</a></article>
+        <article class="card material-card reveal"><span class="badge">PDF</span><h3>Guia de Autodepuração</h3><p>Entenda a avaliação da capacidade de suporte de corpos hídricos receptores.</p><a class="card-link" href="pages/materiais/guia-autodepuracao.html">Acessar material</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white cta-final">
+    <div class="container reveal">
+      <h2>Precisa estruturar um estudo, projeto ou parecer técnico?</h2>
+      <p>Envie as informações iniciais da sua demanda para análise preliminar e agendamento de reunião técnica.</p>
+      <a class="btn btn-dark" href="pages/orcamento.html">Solicitar orçamento</a>
+    </div>
+  </section>
+</main>
+<div class="language-notice" data-language-notice><p>Your browser language appears to be English. An English version is available.</p><div class="notice-actions"><a class="btn btn-dark" href="en/index.html">Open English version</a><button class="btn btn-outline" type="button" data-dismiss-language>Dismiss</button></div></div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>GCRH Engenharia</h3>
+        <p>Engenharia consultiva, recursos hídricos, saneamento, estudos ambientais, geoprocessamento, modelagem computacional e soluções digitais aplicadas.</p>
+      </div>
+      <div>
+        <h3>Institucional</h3>
+        <a href="pages/servicos.html">Serviços</a>
+        <a href="pages/projetos.html">Projetos</a>
+        <a href="pages/solucoes-digitais.html">Soluções Digitais</a>
+      </div>
+      <div>
+        <h3>Conteúdo</h3>
+        <a href="pages/biblioteca-tecnica.html">Biblioteca Técnica</a>
+        <a href="pages/treinamentos.html">Treinamentos</a>
+        <a href="pages/orcamento.html">Solicitar Orçamento</a>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <a href="mailto:contato@gcrh.eng.br">contato@gcrh.eng.br</a>
+        <a href="pages/contato.html">Fale conosco</a>
+        <a href="pages/politica-privacidade.html">Política de Privacidade</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-current-year></span> GCRH Engenharia. Todos os direitos reservados.</span>
+      <span class="credit">Base visual reconstruída a partir do template Coefficient (TEMPLATED), CC BY 3.0.</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
