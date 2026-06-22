@@ -27,14 +27,14 @@
       raiz: pages/... | pages/: ../pages/... | pages/subpasta/: ../../pages/...
       O item "Projetos" fica dentro do dropdown de Serviços.
     -->
-    <!-- MENU PRINCIPAL - INÍCIO -->
+    <!-- MENU PRINCIPAL - INÍCIO - SUBPASTAS NIVEL 1 -->
     <nav class="main-nav" data-main-nav aria-label="Navegação principal">
       <a href="../index.html" class="active">Início</a>
 
       <div class="nav-item has-dropdown">
         <a
           href="../pages/servicos.html"
-          class="nav-link"
+          class="nav-link "
           data-dropdown-trigger
           aria-haspopup="true"
           aria-expanded="false"
@@ -50,7 +50,7 @@
       <a href="../pages/biblioteca-tecnica.html" class="">Biblioteca Técnica</a>
       <a href="../pages/treinamentos.html" class="">Treinamentos</a>
       <a href="../pages/contato.html" class="">Contato</a>
-      <a class="nav-cta" href="pages/orcamento.html">Solicitar orçamento</a>
+      <a class="nav-cta" href="../pages/orcamento.html">Solicitar orçamento</a>
     </nav>
     <!-- MENU PRINCIPAL - FIM -->
     <div class="lang-switch" aria-label="Selecionar idioma"><a class="active" href="../index.html">PT</a><a href="../en/index.html">EN</a></div>
@@ -73,7 +73,7 @@
         <div class="resource-list">
           <article class="resource-item">
             <div class="resource-item-image">
-              <img src="../assets/img/hero/pgrcc-cartilha.jpg" alt="Cartilha PGRCC">
+              <img src="../assets/img/pgrcc-cartilha.jpg" alt="Cartilha PGRCC">
             </div>
 
             <div class="resource-item-content">
@@ -81,6 +81,24 @@
               <h3>O que você precisa saber sobre o PGRCC</h3>
               <p>
                 Material introdutório para obras e empreendimentos que precisam estruturar informações básicas sobre o Plano de Gerenciamento de Resíduos da Construção Civil.
+              </p>
+
+              <div class="resource-item-actions">
+                <a class="card-link" href="construcao.html">Abrir</a>
+                <a class="card-link" href="construcao.html">Baixar PDF</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="resource-item">
+            <div class="resource-item-image">
+              <img src="../assets/img/latex-cartilha.jpg" alt="Cartilha PGRCC">
+            </div>
+            <div class="resource-item-content">
+              <span class="badge-form">Cartilha técnica</span>
+              <h3>Manual LaTEX: básico</h3>
+              <p>
+                Aprenda a baixar e instalar o LaTEX no seu computador. Isso é necessário para o curso de automação para consultores ambientais e engenheiros.
               </p>
 
               <div class="resource-item-actions">
@@ -179,20 +197,20 @@
 
 
 </main>
-<!-- FOOTER PADRÃO INÍCIO - SUBPASTAS-->
+<!-- FOOTER PADRÃO INÍCIO - SUBPASTAS NIVEL 1-->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <h3>GCRH Engenharia LTDA</h3>
-        <p>Engenharia consultiva, recursos hídricos, saneamento, estudos ambientais, geoprocessamento, modelagem computacional e soluções digitais aplicadas.</p>
+        <p>Engenharia consultiva, recursos hídricos, estudos ambientais, projetos de saneamento, geoprocessamento, modelagem computacional e soluções digitais aplicadas.</p>
         <p>CNPJ: 65.422.760/0001-32</p>
       </div>
       <div>
         <h3>Institucional</h3>
         <a href="../pages/servicos.html">Serviços</a>
-        <a href="../pages/projetos.html">Projetos</a>
-        <a href="../pages/quem-somos.html">Soluções Digitais</a>
+        <a href="../pages/servicos/projetos-infra.html">Projetos</a>
+        <a href="../pages/quem-somos.html">Quem somos</a>
       </div>
       <div>
         <h3>Conteúdo</h3>

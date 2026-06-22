@@ -118,6 +118,8 @@
         document.body.style.overflow = '';
       };
 
+      
+
       document.addEventListener('click', (event) => {
         const closeButton = event.target.closest('[data-lightbox-close]');
 
@@ -154,5 +156,38 @@
       });
     }
   }
+
+  function loadTallyEmbeds() {
+  const tallyScriptUrl = "https://tally.so/widgets/embed.js";
+
+  const loadEmbeds = function () {
+    if (typeof Tally !== "undefined") {
+      Tally.loadEmbeds();
+    } else {
+      document
+        .querySelectorAll("iframe[data-tally-src]:not([src])")
+        .forEach(function (iframe) {
+          iframe.src = iframe.dataset.tallySrc;
+        });
+    }
+  };
+
+  if (typeof Tally !== "undefined") {
+    loadEmbeds();
+    return;
+  }
+
+  if (document.querySelector(`script[src="${tallyScriptUrl}"]`) === null) {
+    const script = document.createElement("script");
+    script.src = tallyScriptUrl;
+    script.onload = loadEmbeds;
+    script.onerror = loadEmbeds;
+    document.body.appendChild(script);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  loadTallyEmbeds();
+});
 
 })();

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solicitar Orçamento | GCRH Engenharia</title>
-  <meta name="description" content="Página de pré-orçamento com espaço para link ou incorporação de formulário externo e agendamento online." />
+  <meta name="description" content="Página de orçamento com formulário externo e agendamento online." />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
@@ -27,9 +27,9 @@
       raiz: pages/... | pages/: ../pages/... | pages/subpasta/: ../../pages/...
       O item "Projetos" fica dentro do dropdown de Serviços.
     -->
-    <!-- MENU PRINCIPAL - INÍCIO -->
+    <!-- MENU PRINCIPAL - INÍCIO - SUBPASTAS NIVEL 1 -->
     <nav class="main-nav" data-main-nav aria-label="Navegação principal">
-      <a href="index.html" class="active">Início</a>
+      <a href="../index.html" class="active">Início</a>
 
       <div class="nav-item has-dropdown">
         <a
@@ -50,7 +50,7 @@
       <a href="../pages/biblioteca-tecnica.html" class="">Biblioteca Técnica</a>
       <a href="../pages/treinamentos.html" class="">Treinamentos</a>
       <a href="../pages/contato.html" class="">Contato</a>
-      <a class="nav-cta" href="pages/orcamento.html">Solicitar orçamento</a>
+      <a class="nav-cta" href="../pages/orcamento.html">Solicitar orçamento</a>
     </nav>
     <!-- MENU PRINCIPAL - FIM -->
     <div class="lang-switch" aria-label="Selecionar idioma"><a class="active" href="../index.html">PT</a><a href="../en/index.html">EN</a></div>
@@ -62,7 +62,7 @@
     <div class="container page-title">
       <div class="breadcrumb"><a href="../index.html">Início</a> / Solicitar Orçamento</div>
       <span class="eyebrow">Orçamento</span>
-      <h1>Envie as informações iniciais da sua demanda</h1>
+      <h1>Envie as informações da sua demanda</h1>
       <p>Através do formulário, conseguiremos avaliar sua demanda e realizar a cotação desejada.</p>
     </div>
   </section>
@@ -70,8 +70,8 @@
   <section class="section section-white">
     <div class="container split">
       <div>
-        <h2>Entraremos em contato em até 24 horas!</h2>
-        <p>Clique no botão <strong>Abrir formulário</strong> e preencha com as informações para contato</p>
+        <h2>Entraremos em contato logo em seguida!</h2>
+        <p>Clique no botão <strong>Abrir formulário</strong> ou <strong>Preencha o formulário a seguir</strong> com as informações para contato</p>
         <div class="check-list">
           <div class="check-item">Dados de contato.</div>
           <div class="check-item">Tipo de serviço, município, prazo e documentos disponíveis.</div>
@@ -79,27 +79,41 @@
           <div class="check-item">Agendamento de reunião para apresentação de valores e escopo de serviço.</div>
         </div>
         <p>Conheça nossa <a href="politica-privacidade.html"> <strong>Política de Privacidade</strong></a></p>
-      </div>
-        <a class="btn btn-dark" href="../pages/construcao.html">Abrir formulário</a> 
+     </div>
+        <a class="btn btn-dark" href="https://tally.so/r/ZjWGAv" target="_blank">Abrir formulário</a> 
+    </div>
+
+    <div class="container">
+      <div class="tally-card">
+            <iframe 
+              data-tally-src="https://tally.so/embed/ZjWGAv?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" 
+              loading="lazy" 
+              width="100%" 
+              height="990" 
+              frameborder="0" 
+              marginheight="0" 
+              marginwidth="0" 
+              title="Vamos montar o seu pré-orçamento">
+            </iframe>
       </div>
     </div>
   </section>
 
 </main>
-<!-- FOOTER PADRÃO INÍCIO - SUBPASTAS-->
+<!-- FOOTER PADRÃO INÍCIO - SUBPASTAS NIVEL 1-->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
       <div>
         <h3>GCRH Engenharia LTDA</h3>
-        <p>Engenharia consultiva, recursos hídricos, saneamento, estudos ambientais, geoprocessamento, modelagem computacional e soluções digitais aplicadas.</p>
+        <p>Engenharia consultiva, recursos hídricos, estudos ambientais, projetos de saneamento, geoprocessamento, modelagem computacional e soluções digitais aplicadas.</p>
         <p>CNPJ: 65.422.760/0001-32</p>
       </div>
       <div>
         <h3>Institucional</h3>
         <a href="../pages/servicos.html">Serviços</a>
-        <a href="../pages/projetos.html">Projetos</a>
-        <a href="../pages/quem-somos.html">Soluções Digitais</a>
+        <a href="../pages/servicos/projetos-infra.html">Projetos</a>
+        <a href="../pages/quem-somos.html">Quem somos</a>
       </div>
       <div>
         <h3>Conteúdo</h3>
