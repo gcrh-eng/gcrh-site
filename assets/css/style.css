@@ -555,6 +555,29 @@ img { max-width: 100%; display: block; }
   min-width: 0;
 }
 
+.split-media {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  line-height: 0;
+}
+
+.split-media img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  box-shadow: none;
+  transition: transform .25s ease;
+  transform-origin: center;
+}
+
+.split-media:hover img {
+  transform: scale(1.035);
+}
+
+
+
 /* Imagem dentro do bloco split */
 .split img {
   border-radius: var(--radius-xl);
@@ -571,6 +594,28 @@ img { max-width: 100%; display: block; }
   object-fit: cover;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
+}
+
+.split-media-tall-single {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  line-height: 0;
+}
+
+.split-media-tall-single img {
+  display: block;
+  width: 100%;
+  height: 840px;
+  object-fit: cover;
+  border-radius: inherit;
+  box-shadow: none;
+  transition: transform .25s ease;
+  transform-origin: center;
+}
+
+.split-media-tall-single:hover img {
+  transform: scale(1.035);
 }
 
 /* Variante: imagem à esquerda e texto à direita */
