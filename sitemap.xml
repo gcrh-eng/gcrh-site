@@ -1,32 +1,277 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.gcrh.eng.br/en/index.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/biblioteca-tecnica.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/contato.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/materiais/cartilha-pgrcc.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/materiais/checklist-licenciamento.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/materiais/guia-autodepuracao.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/materiais/guia-drenagem-urbana.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/materiais/guia-estudos-hidrologicos.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/orcamento.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/politica-privacidade.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/projetos/drenagem-urbana.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/projetos/estacao-tratamento-esgoto.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/projetos/estudos-ambientais.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/projetos/saneamento.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/projetos/terraplenagem.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/projetos.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos/drenagem-urbana.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos/estacao-tratamento-esgoto.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos/estudos-hidrologicos.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos/geoprocessamento.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos/modelagem-autodepuracao.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos/pareceres-tecnicos.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos/pgrcc.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos/saneamento.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos/terraplenagem.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/servicos.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/solucoes-digitais.html</loc></url>
-  <url><loc>https://www.gcrh.eng.br/pages/treinamentos.html</loc></url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/en/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/orcamento.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/contato.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/quem-somos.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/biblioteca-tecnica.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/treinamentos.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/disponibilidade-autodepuracao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/estudos-hidrologicos.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/licenciamento-ambiental.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/outorga.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.88</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/pgrcc.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/prad.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.86</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/estudos-ambientais.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/estudo-viabilidade-ambiental.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/consultoria-assessoria.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.84</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/gestao-obra-projeto.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/projetos-infra.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/eiv.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/rit.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/servicos/inspecao-drone.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/materiais/guia-roteiro-semarh-outorga.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/materiais/guia-estudos-hidrologicos.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/materiais/guia-autodepuracao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.76</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/materiais/guia-cartilha-pgrcc.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/materiais/guia-drenagem-urbana.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/materiais/guia-estudos-ambientais.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.74</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/cursos/curso-pgrcc.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/cursos/curso-hidrologia.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/cursos/curso-qgis.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/cursos/curso-automacao.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.72</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/projetos/coleta-esgoto.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/projetos/drenagem-urbana.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/projetos/estacao-tratamento-esgoto.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/projetos/instalacoes-prediais.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/projetos/rede-abastecimento.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/projetos/terraplenagem.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gcrh.eng.br/pages/politica-privacidade.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
 </urlset>

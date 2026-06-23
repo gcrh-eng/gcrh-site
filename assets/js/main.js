@@ -186,8 +186,27 @@
   }
 }
 
+function setupTechnicalAccordion() {
+  const accordionItems = document.querySelectorAll(".technical-accordion .accordion-item");
+
+  if (!accordionItems.length) return;
+
+  accordionItems.forEach(function (item) {
+    item.addEventListener("toggle", function () {
+      if (!item.open) return;
+
+      accordionItems.forEach(function (otherItem) {
+        if (otherItem !== item) {
+          otherItem.removeAttribute("open");
+        }
+      });
+    });
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   loadTallyEmbeds();
+  setupTechnicalAccordion();
 });
 
 })();
