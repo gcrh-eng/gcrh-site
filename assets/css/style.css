@@ -1234,3 +1234,64 @@ img { max-width: 100%; display: block; }
 .text-link:active {
   color: var(--orange-50);
 }
+
+.course-schedule {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.course-schedule-item {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding: 18px;
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.course-schedule-marker {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  background: var(--blue-900);
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.course-schedule-content h3 {
+  margin: 0 0 8px;
+  color: var(--blue-900);
+  font-size: 1.12rem;
+  line-height: 1.25;
+}
+
+.course-schedule-content p {
+  margin: 0;
+  color: var(--slate-600);
+  line-height: 1.6;
+}
+
+@media (max-width: 620px) {
+  .course-schedule-item {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .course-schedule-marker {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+}
